@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 35px 15px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.trang-tin-tuc {
+  width: 840px;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #eefafd;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+}
+
+.dau-trang {
+  padding: 18px;
+  color: white;
+  text-align: center;
+  background:
+    radial-gradient(circle at 16% 5%, #24d6ae 0 35px, transparent 36px),
+    radial-gradient(circle at 35% 0%, #13b9c6 0 60px, transparent 61px),
+    radial-gradient(circle at 87% 5%, #1bc989 0 65px, transparent 66px),
+    linear-gradient(110deg, #087fc9, #00a99d);
+}
+
+hgroup h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+hgroup p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+nav {
+  padding: 8px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 6px 14px;
+  border-radius: 15px;
+  color: #555;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+nav a:first-child,
+nav a:nth-child(2) {
+  color: white;
+  background-color: #298fca;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #1681bd;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 18px;
+  padding: 30px 125px;
+}
+
+article {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+article header {
+  padding: 12px;
+  background: linear-gradient(90deg, #d8e6ff, #d7f6e6);
+}
+
+article header h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+article header p {
+  margin: 0;
+  font-size: 11px;
+}
+
+article > p {
+  margin: 0;
+  padding: 10px 12px 0;
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+article footer {
+  margin-top: 12px;
+  padding: 9px 12px;
+  background-color: #b8efdf;
+  font-size: 11px;
+  font-style: italic;
+}
+
+aside {
+  height: fit-content;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+aside h3 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+aside li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+aside li:last-child {
+  border-bottom: none;
+}
+
+aside a {
+  color: #333;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #1681bd;
+}
+
+.cuoi-trang {
+  padding: 11px;
+  background: linear-gradient(90deg, #d9e6ff, #c3f1df);
+  text-align: center;
+  font-size: 10px;
+}
+
+.cuoi-trang address {
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+}

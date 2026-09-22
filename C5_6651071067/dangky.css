@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 15px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.khung-dang-ky {
+  width: 470px;
+  max-width: 100%;
+  margin: auto;
+  padding: 12px 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+fieldset {
+  margin: 0 0 6px;
+  padding: 8px;
+  border: 1px solid #92a4a4;
+  border-radius: 4px;
+  background-color: #e7f7f7;
+}
+
+legend {
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+.dong-form {
+  display: grid;
+  grid-template-columns: 118px 1fr;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.dong-form:last-child {
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="search"] {
+  width: 100%;
+  height: 19px;
+  padding: 2px 5px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #178bda;
+}
+
+input[type="color"] {
+  width: 42px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid #999;
+}
+
+input[type="file"] {
+  width: 100%;
+  font-size: 10px;
+}
+
+.nhom-lua-chon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.nhom-lua-chon label {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.nhom-lua-chon input {
+  margin: 0;
+}
+
+.nut-form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nut-form input {
+  padding: 5px 9px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.nut-form input[type="submit"] {
+  background-color: #168bd2;
+}
+
+.nut-form input[type="reset"] {
+  margin-left: 4px;
+  background-color: #777;
+}
+
+.nut-form input:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+
+  .khung-dang-ky {
+    min-height: 100vh;
+    border-radius: 0;
+  }
+
+  .dong-form {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+}
